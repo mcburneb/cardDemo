@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ca.sheridancollege.week2.softwarefundamentals;
 
 /**
@@ -16,6 +11,11 @@ public class Card {
     public Card (String s, int v){
         suit = s;
         value = v;
+        if (s.equals("Hearts") || s.equals("Diamonds") || s.equals("Clubs") || s.equals("Spades")) {
+            System.out.println("The suit is valid.");
+        } else {
+            System.out.println("The suit is invalid");
+        }
     }
 
     /**
@@ -43,7 +43,11 @@ public class Card {
      * @param value the value to set
      */
     public void setValue(int value) {
-        this.value = value;
+        if (value > 13 || value < 1){
+            System.out.println("That value is incorrect. Please try agian.");
+        } else {
+            this.value = value;
+        }
     }
     
 }
