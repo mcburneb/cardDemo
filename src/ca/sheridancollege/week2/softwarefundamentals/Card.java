@@ -14,7 +14,12 @@ public class Card {
         if (s.equals("Hearts") || s.equals("Diamonds") || s.equals("Clubs") || s.equals("Spades")) {
             System.out.println("The suit is valid.");
         } else {
-            System.out.println("The suit is invalid");
+            System.out.println("The suit is invalid. It must be Diamonds, Hearts, Club, or Spades");
+        }
+        if (value >= 1 && value <= 13) {
+            System.out.println("The value is valid.");
+        } else {
+            System.out.println("The value is invalid. It must be creater than 0 and less than 14.");
         }
     }
 
