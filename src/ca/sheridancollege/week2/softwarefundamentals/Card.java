@@ -11,6 +11,8 @@ public class Card {
     public Card (String s, int v){
         this.suit = s;
         this.value = v;
+        
+        // added
         if (s.equals("Hearts") || s.equals("Diamonds") || s.equals("Clubs") || s.equals("Spades")) {
             System.out.println("The suit is valid.");
         } else {
