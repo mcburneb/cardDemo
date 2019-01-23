@@ -11,16 +11,6 @@ public class Card {
     public Card (String s, int v){
         suit = s;
         value = v;
-        if (s.equals("Hearts") || s.equals("Diamonds") || s.equals("Clubs") || s.equals("Spades")) {
-            System.out.println("The suit is valid.");
-        } else {
-            System.out.println("The suit is invalid. The suit must be Diamonds, Hearts, Clubs, or Spades.");
-        }
-        if (value < 14 && value > 0){
-            System.out.println("That value is valid.");
-        } else {
-            System.out.println("That value is invalid. It must be geater than 0 and less than 14.");
-        }
     }
 
     /**
