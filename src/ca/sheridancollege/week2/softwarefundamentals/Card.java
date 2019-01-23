@@ -11,6 +11,11 @@ public class Card {
     public Card (String s, int v){
         suit = s;
         value = v;
+        if (s.equals("Hearts") || s.equals("Diamonds") || s.equals("Clubs") || s.equals("Spades")) {
+            System.out.println("The suit is valid.");
+        } else {
+            System.out.println("The suit is invalid");
+        }
     }
 
     /**
